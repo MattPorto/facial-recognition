@@ -18,7 +18,7 @@ class ANN(object):
 
     # starting weights
 
-    self.W1 = np.random.randn(D, self.M) / np.sqrt(D + self.M) # first weight
+    self.W1 = np.random.randn(D, self.M) / np.sqrt(D) # first weight
     self.b1 = np.zeros(self.M) # bias
 
     self.W2 = np.random.rand(self.M) / np.sqrt(self.M) # hidden output weights
